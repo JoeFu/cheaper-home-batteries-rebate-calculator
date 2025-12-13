@@ -1,0 +1,11 @@
+{
+  "fetchedAt": "2025-12-13T14:17:41.924Z",
+  "sourcePageUrl": "https://cer.gov.au/document_page/cec-approved-solar-batteries",
+  "sourceCsvUrl": "https://cer.gov.au/document/cec-approved-solar-batteries-0",
+  "recordCount": 1246,
+  "columnMapping": {
+    "manufacturer": "Manufacturer/Certificate Holder Account",
+    "model": "Model Number",
+    "usable": "Usable Capacity (kWh)"
+  }
+}
