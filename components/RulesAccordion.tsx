@@ -14,8 +14,8 @@ export function RulesAccordion() {
       <div className="mt-5 grid gap-6 md:grid-cols-2">
         <div>
           <div className="text-sm font-semibold text-zinc-900">{t("rulesTitleFactors")}</div>
-          <div className="mt-3 overflow-hidden rounded-xl border border-zinc-200">
-            <table className="w-full text-left text-xs">
+          <div className="mt-3 overflow-x-auto rounded-xl border border-zinc-200">
+            <table className="min-w-max w-full text-left text-xs">
               <thead className="bg-zinc-50 text-zinc-600">
                 <tr>
                   <th className="px-3 py-2 font-medium">{t("period")}</th>

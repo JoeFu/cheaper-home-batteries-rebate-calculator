@@ -25,15 +25,15 @@ export function ResultCard({ result }: { result: CalculationResult }) {
 
   return (
     <div className="sticky top-6 rounded-2xl border border-emerald-200 bg-white p-6 shadow-sm">
-      <div className="flex items-start justify-between gap-4">
-        <div>
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div className="min-w-0">
           <div className="text-sm font-medium text-zinc-700">{t("estimatedRebate")}</div>
-          <div className="mt-2 text-5xl font-semibold tracking-tight text-emerald-700">
+          <div className="mt-2 break-words text-4xl font-semibold tracking-tight text-emerald-700 sm:text-5xl">
             ${result.rebateAud.toLocaleString()}
             <span className="ml-2 text-base font-semibold text-zinc-500">AUD</span>
           </div>
         </div>
-        <div className="rounded-full bg-emerald-50 px-5 py-4 text-center">
+        <div className="shrink-0 self-start rounded-full bg-emerald-50 px-5 py-4 text-center sm:self-auto">
           <div className="text-xs font-medium text-zinc-600">STCs</div>
           <div className="mt-1 text-2xl font-semibold text-zinc-900">{result.stcs}</div>
         </div>
@@ -46,12 +46,12 @@ export function ResultCard({ result }: { result: CalculationResult }) {
             const widthPct = Math.round((b.rebateAud / maxBucketRebate) * 100);
             return (
               <div key={b.id} className="space-y-2">
-                <div className="flex items-baseline justify-between gap-4">
-                  <div className="text-sm font-medium text-zinc-900">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <div className="min-w-0 text-sm font-medium text-zinc-900">
                     {(locale === "zh" ? b.labelZh : b.labelEn)}{" "}
                     <span className="text-zinc-500">({b.kWh} kWh)</span>
                   </div>
-                  <div className="text-sm font-semibold text-zinc-900">
+                  <div className="shrink-0 text-sm font-semibold text-zinc-900">
                     ${b.rebateAud.toLocaleString()}{" "}
                     <span className="text-xs font-medium text-zinc-500">({b.stcs} STCs)</span>
                   </div>
