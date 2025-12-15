@@ -8,6 +8,7 @@ export type MessageKey =
   | "clear"
   | "searchPlaceholder"
   | "noMatches"
+  | "scrollToLoadMore"
   | "usable"
   | "unknown"
   | "select"
@@ -54,6 +55,7 @@ export const messages: Record<Locale, Record<MessageKey, string>> = {
     clear: "Clear",
     searchPlaceholder: "Search manufacturer or model…",
     noMatches: "No matches",
+    scrollToLoadMore: "Scroll to load more…",
     usable: "Usable",
     unknown: "Unknown",
     select: "Select",
@@ -99,6 +101,7 @@ export const messages: Record<Locale, Record<MessageKey, string>> = {
     clear: "清除",
     searchPlaceholder: "搜索品牌/型号…",
     noMatches: "没有匹配结果",
+    scrollToLoadMore: "继续向下滚动加载更多…",
     usable: "可用容量",
     unknown: "未知",
     select: "选择",
@@ -147,5 +150,6 @@ export function t(locale: Locale, key: MessageKey, params?: Record<string, strin
   }
   return s;
 }
+
 
 

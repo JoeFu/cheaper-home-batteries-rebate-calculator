@@ -47,3 +47,5 @@ export function searchBatteries(query: string, limit = 25): CecBattery[] {
 }
 
 
+
+

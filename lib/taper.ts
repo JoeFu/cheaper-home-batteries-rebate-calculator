@@ -87,3 +87,5 @@ export function sumWeightedKWh(buckets: Bucket[]): number {
 }
 
 
+
+
