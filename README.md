@@ -1,5 +1,19 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Analytics (Google Analytics 4)
+
+This project supports GA4 via `NEXT_PUBLIC_GA_MEASUREMENT_ID`.
+
+- **Local dev**: create a `.env.local` file with:
+
+```bash
+NEXT_PUBLIC_GA_MEASUREMENT_ID=G-H5NGFPDVVD
+```
+
+- **Vercel**: add the same environment variable in Project Settings → Environment Variables.
+
+To verify, open Google Analytics → Realtime, then visit the site and navigate between pages (route changes are tracked).
+
 ## Getting Started
 
 First, run the development server:
